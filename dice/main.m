@@ -36,7 +36,8 @@ int main(int argc, const char * argv[]) {
             }
             
             if([userInput isEqualToString:@"reset"]) {
-                printf("RESET");
+                [gc resetDice];
+                [gc printDice];
                 continue;
             }
         }

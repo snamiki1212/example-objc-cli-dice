@@ -80,6 +80,7 @@
 }
 
 - (void) resetDice {
+    self.indeciesOfHoldDie = [NSMutableSet new];
     return;
 }
 @end

@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *) _doGetDieLogo: (int) number;
 - (void) printScore;
 - (void) resetDice;
-// private
 @end
 
 NS_ASSUME_NONNULL_END

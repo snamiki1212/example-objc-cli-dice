@@ -40,6 +40,7 @@ int main(int argc, const char * argv[]) {
             if([userInput isEqualToString:@"reset"]) {
                 [gc resetDice];
                 [gc printDice];
+                [gc printScore];
                 continue;
             }
         }

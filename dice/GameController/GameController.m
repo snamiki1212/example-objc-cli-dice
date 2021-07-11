@@ -76,7 +76,13 @@
 }
 
 - (void) printScore {
-    
+    int score = 0;
+    for(int idx = 0; idx < [self.dice count]; idx++) {
+        if(![self _isHoldDie: idx]) continue;
+        Dice *die = [self.dice objectAtIndex:idx];
+        score += [die value];
+    }
+    NSLog(@"score: %d", score);
 }
 
 - (void) resetDice {

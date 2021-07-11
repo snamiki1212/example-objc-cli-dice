@@ -26,12 +26,14 @@ int main(int argc, const char * argv[]) {
                 int indexInput = [indexInputStr intValue];
                 [gc holdDie:indexInput];
                 [gc printDice];
+                [gc printScore];
                 continue;
             }
             
             if([userInput isEqualToString:@"roll"]) {
                 [gc roll];
                 [gc printDice];
+                [gc printScore];
                 continue;
             }
             

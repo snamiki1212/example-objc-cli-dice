@@ -58,10 +58,10 @@
 - (NSString *) _getDieLogo: (int) index {
     Dice *die = [self.dice objectAtIndex: index];
     NSString *dieStr = [self _doGetDieLogo: die.value];
-    return [self _isHoldDie: index] ? [self _decorateSquareBruncket: dieStr] : dieStr;
+    return [self _isHoldDie: index] ? [self _decorateWithSquareBrackets: dieStr] : dieStr;
 }
 
-- (NSString *) _decorateSquareBruncket: (NSString *) str {
+- (NSString *) _decorateWithSquareBrackets: (NSString *) str {
     return [[NSString new] stringByAppendingFormat: @"[%@]", str];
 }
 

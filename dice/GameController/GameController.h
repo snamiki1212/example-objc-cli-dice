@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL) _isHoldDie: (int) index;
 - (void) printDice;
 - (NSString *) _getDieLogo: (int) index;
-- (NSString *) _decorateSquareBruncket: (NSString *) str;
+- (NSString *) _decorateWithSquareBrackets: (NSString *) str;
 - (NSString *) _doGetDieLogo: (int) number;
 - (void) printScore;
 - (void) resetDice;
